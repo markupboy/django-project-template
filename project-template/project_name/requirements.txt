@@ -1,6 +1,5 @@
 # Core
 Django==1.4
-Fabric==1.2.2
 South==0.7.4
 pytz==2012b
 PIL
@@ -13,10 +12,6 @@ python-memcached==1.47
 
 # Database
 MySQL-python==1.2.3
-
-# Storage
-django-cumulus==1.0.3
-python-cloudfiles
 
 # Templates
 Markdown==2.0.3

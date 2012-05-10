@@ -1,4 +1,5 @@
 import os, sys, datetime
+from {{ project_name }}.settings.local import *
 
 ##### PATH SETTINGS ###########################################################
 
@@ -13,13 +14,13 @@ sys.path.append(os.path.join(PROJECT_ROOT, 'lib'))
 
 # People
 ADMINS = (
-    ('Jeff Croft', 'jeff@thirdavenuedesign.com'),
+    ('Blake Walters', 'blake@markupboy.com'),
 )
 MANAGERS = ADMINS
 
 
 # Locale
-TIME_ZONE = 'America/Los_Angeles'
+TIME_ZONE = 'America/Denver'
 LANGUAGE_CODE = 'en-us'
 
 # Site
@@ -75,7 +76,6 @@ MIDDLEWARE_CLASSES = (
   'django.contrib.messages.middleware.MessageMiddleware',
   # Uncomment the next line for simple clickjacking protection:
   # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
-  'jeffcroft.middleware.exceptions.UserBasedExceptionMiddleware',
 )
 
 
