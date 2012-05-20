@@ -1,5 +1,4 @@
 import os, sys, datetime
-from {{ project_name }}.settings.local import *
 
 ##### PATH SETTINGS ###########################################################
 
@@ -203,18 +202,5 @@ COMPRESS_CSS_FILTERS = (
 )
 COMPRESS_OFFLINE = True
 
-
-# Rackspace Cloud Files Storage
-
-DEFAULT_FILE_STORAGE      = 'cumulus.storage.CloudFilesStorage'
-CUMULUS_USERNAME          = ''
-CUMULUS_API_KEY           = ''
-CUMULUS_CONTAINER         = ''
-CUMULUS_TIMEOUT           = 15
-
-CUMULUS_STATIC_CONTAINER  = ''
-CUMULUS_USE_SERVICENET    = True
-CUMULUS_FILTER_LIST       = []
-
-# Thumbnails
-THUMBNAIL_STORAGE         = 'cumulus.storage.CloudFilesStorage'
+# Load local environment settings
+from local import *
